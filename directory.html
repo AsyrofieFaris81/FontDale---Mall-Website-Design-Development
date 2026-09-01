@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the FontDale directory — 12 shopping brands and 12 restaurants across North Gallery and South Pavilion. Search by brand, category, or floor.">
+  <meta property="og:title" content="Directory | FontDale">
+  <meta property="og:description" content="Find shopping and dining destinations at FontDale Arcadia Circle.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%23d946ef'/><text x='50' y='68' text-anchor='middle' font-size='52' font-weight='900' fill='white'>FD</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Directory | FontDale</title>
+</head>
+<body>
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <span class="grid-haze"></span>
+  </div>
+  <header class="site-header compact-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="FontDale Home">
+    <span class="brand-mark">
+  <img src="assets/Logo(FontDale)-Ai.png" alt="FontDale Logo" class="brand-logo-img">
+</span>
+    <span class="brand-copy"><strong>FontDale</strong><small>Arcadia Circle</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+    <a class="nav-link " href="index.html">Home</a><a class="nav-link active" href="directory.html">Directory</a><a class="nav-link " href="events.html">Events</a><a class="nav-link " href="about.html">About Us</a><a class="nav-link " href="newsletter.html">Newsletter</a>
+    <a class="nav-cta" href="directory.html">Explore Stores</a>
+  </nav>
+</header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main id="main-content">
+  <section class="fd-hero fd-directory-hero reveal-on-scroll">
+    <div class="fd-hero-copy">
+      <p class="eyebrow">FontDale directory</p>
+      <h1>Find your favorite shopping and dining destinations.</h1>
+      <p class="hero-lead">Browse all featured tenants at FontDale. Use the search bar or filter by category to quickly find the brand or restaurant you are looking for.</p>
+      <div class="fd-hero-stats">
+        <span><strong>12</strong> Shopping brands</span>
+        <span><strong>12</strong> Restaurants and cafes</span>
+        <span><strong>2</strong> Main wings</span>
+      </div>
+    </div>
+    <div class="fd-directory-toolbox shimmer-card">
+      <p class="eyebrow">Quick finder</p>
+      <h3>Search by brand, category, floor, or mood.</h3>
+      <div class="fd-search-wrap">
+        <input id="directorySearch" type="search" placeholder="Search H&M, sushi, coffee, sneakers..." aria-label="Search directory">
+      </div>
+      <div class="filter-bar premium-filter" aria-label="Directory filters">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="shopping">Shopping</button>
+        <button class="filter-chip" data-filter="restaurant">Restaurant</button>
+      </div>
+      <p id="directorySearchStatus" class="fd-search-status">Showing all featured tenants.</p>
+    </div>
+  </section>
+
+  <section class="fd-section fd-directory-summary reveal-on-scroll">
+    <article><strong>North Gallery</strong><p>Fashion, beauty, lifestyle, and premium browsing routes.</p></article>
+    <article><strong>South Pavilion</strong><p>Dining, quick service, family-friendly restaurants, and coffee stops.</p></article>
+    <article><strong>Compact cards</strong><p>Every tenant includes a description, category, floor info, and visit tags.</p></article>
+  </section>
+
+  <section class="directory-section fd-section" data-section="shopping" id="shopping-section">
+    <div class="fd-section-title inline-title">
+      <div>
+        <p class="eyebrow">Shopping</p>
+        <h2>Shopping brands with useful browsing context.</h2>
+        <p>Fashion, sportswear, beauty, denim, lifestyle goods, and health essentials in one clear section.</p>
+      </div>
+      <a href="#restaurant-section" class="text-link">Jump to Restaurants</a>
+    </div>
+    <div class="fd-tenant-grid brand-directory-grid"><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="h&amp;m fashion trend-led everyday pieces, relaxed basics, and seasonal looks for casual city styling. north gallery level 2 apparel women men">
+  <div class="fd-tenant-image">
+    <img src="assets/H&M(Directory).jpg" alt="H&M visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Fashion</span>
+    <h3>H&amp;M</h3>
+    <p>Trend-led everyday pieces, relaxed basics, and seasonal looks for casual city styling.</p>
+    <div class="fd-tag-row"><span>Apparel</span><span>Women</span><span>Men</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="uniqlo lifewear comfortable basics, functional fabrics, and clean silhouettes for daily urban movement. north gallery level 1 basics outerwear family">
+  <div class="fd-tenant-image">
+    <img src="assets/Uniqlo(Directory).jpg" alt="UNIQLO visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">LifeWear</span>
+    <h3>UNIQLO</h3>
+    <p>Comfortable basics, functional fabrics, and clean silhouettes for daily urban movement.</p>
+    <div class="fd-tag-row"><span>Basics</span><span>Outerwear</span><span>Family</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="zara contemporary fashion statement pieces, refined tailoring, and fast-moving collections for polished wardrobes. north gallery level 2 fashion seasonal premium">
+  <div class="fd-tenant-image">
+    <img src="assets/Zara(Directory).jpg" alt="ZARA visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Contemporary Fashion</span>
+    <h3>ZARA</h3>
+    <p>Statement pieces, refined tailoring, and fast-moving collections for polished wardrobes.</p>
+    <div class="fd-tag-row"><span>Fashion</span><span>Seasonal</span><span>Premium</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="nike sport lifestyle performance sneakers, sportswear icons, and active essentials for high-energy visitors. south pavilion level 1 sneakers training running">
+  <div class="fd-tenant-image">
+    <img src="assets/Nike(Directory).jpg" alt="Nike visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Sport Lifestyle</span>
+    <h3>Nike</h3>
+    <p>Performance sneakers, sportswear icons, and active essentials for high-energy visitors.</p>
+    <div class="fd-tag-row"><span>Sneakers</span><span>Training</span><span>Running</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="adidas sport &amp; streetwear originals, training gear, and lifestyle sneakers with a strong streetwear rhythm. south pavilion level 1 streetwear running originals">
+  <div class="fd-tenant-image">
+    <img src="assets/Adidas(Directory).jpg" alt="adidas visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Sport &amp; Streetwear</span>
+    <h3>adidas</h3>
+    <p>Originals, training gear, and lifestyle sneakers with a strong streetwear rhythm.</p>
+    <div class="fd-tag-row"><span>Streetwear</span><span>Running</span><span>Originals</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="sephora beauty prestige makeup, skincare discovery, fragrance shelves, and beauty advisor support. north gallery level 2 makeup skincare fragrance">
+  <div class="fd-tenant-image">
+    <img src="assets/Sephora(Directory).jpg" alt="Sephora visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Beauty</span>
+    <h3>Sephora</h3>
+    <p>Prestige makeup, skincare discovery, fragrance shelves, and beauty advisor support.</p>
+    <div class="fd-tag-row"><span>Makeup</span><span>Skincare</span><span>Fragrance</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="charles &amp; keith accessories modern bags, shoes, and accessories for a polished day-to-night look. south pavilion level 2 bags shoes accessories">
+  <div class="fd-tenant-image">
+    <img src="assets/Charles&Keith(Directory).jpg" alt="Charles &amp; Keith visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Accessories</span>
+    <h3>Charles &amp; Keith</h3>
+    <p>Modern bags, shoes, and accessories for a polished day-to-night look.</p>
+    <div class="fd-tag-row"><span>Bags</span><span>Shoes</span><span>Accessories</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="miniso lifestyle goods playful home, travel, beauty, and character-inspired essentials at approachable prices. south pavilion level 3 lifestyle gifts travel">
+  <div class="fd-tenant-image">
+    <img src="assets/Miniso(Directory).jpg" alt="MINISO visual">
+    <span class="fd-floor-tag">Level 3</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Lifestyle Goods</span>
+    <h3>MINISO</h3>
+    <p>Playful home, travel, beauty, and character-inspired essentials at approachable prices.</p>
+    <div class="fd-tag-row"><span>Lifestyle</span><span>Gifts</span><span>Travel</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="levi&#x27;s denim classic jeans, trucker jackets, and timeless denim made for everyday confidence. north gallery level 2 denim casual icons">
+  <div class="fd-tenant-image">
+    <img src="assets/Levi's(Directory).jpg" alt="Levi's visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Denim</span>
+    <h3>Levi's</h3>
+    <p>Classic jeans, trucker jackets, and timeless denim made for everyday confidence.</p>
+    <div class="fd-tag-row"><span>Denim</span><span>Casual</span><span>Icons</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="mango modern apparel european-inspired apparel, occasionwear, and contemporary edits with clean finishing. north gallery level 3 women tailoring smart casual">
+  <div class="fd-tenant-image">
+    <img src="assets/Mango(Directory).jpg" alt="MANGO visual">
+    <span class="fd-floor-tag">Level 3</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Modern Apparel</span>
+    <h3>MANGO</h3>
+    <p>European-inspired apparel, occasionwear, and contemporary edits with clean finishing.</p>
+    <div class="fd-tag-row"><span>Women</span><span>Tailoring</span><span>Smart Casual</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="skechers footwear comfort-first sneakers and casual footwear for walking, travel, and active routines. south pavilion level 2 comfort walking family">
+  <div class="fd-tenant-image">
+    <img src="assets/Skechers(Directory).jpg" alt="Skechers visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Footwear</span>
+    <h3>Skechers</h3>
+    <p>Comfort-first sneakers and casual footwear for walking, travel, and active routines.</p>
+    <div class="fd-tag-row"><span>Comfort</span><span>Walking</span><span>Family</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="shopping" data-search="watsons health &amp; beauty daily wellness, personal care, skincare, and pharmacy-style convenience in one stop. south pavilion level 1 wellness skincare personal care">
+  <div class="fd-tenant-image">
+    <img src="assets/Watsons(Directory).jpg" alt="Watsons visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Health &amp; Beauty</span>
+    <h3>Watsons</h3>
+    <p>Daily wellness, personal care, skincare, and pharmacy-style convenience in one stop.</p>
+    <div class="fd-tag-row"><span>Wellness</span><span>Skincare</span><span>Personal Care</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article></div>
+  </section>
+
+  <section class="directory-section fd-section" data-section="restaurant" id="restaurant-section">
+    <div class="fd-section-title inline-title">
+      <div>
+        <p class="eyebrow">Restaurant</p>
+        <h2>Restaurants and cafes for quick meals or longer visits.</h2>
+        <p>From familiar fast food to coffee, sushi, udon, family dining, and Japanese BBQ.</p>
+      </div>
+      <a href="#shopping-section" class="text-link">Back to Shopping</a>
+    </div>
+    <div class="fd-tenant-grid brand-directory-grid"><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="kfc fried chicken crispy chicken, rice meals, family buckets, and quick comfort food for group visits. south pavilion level 1 fast family chicken">
+  <div class="fd-tenant-image">
+    <img src="assets/KFC(Directory).jpg" alt="KFC visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Fried Chicken</span>
+    <h3>KFC</h3>
+    <p>Crispy chicken, rice meals, family buckets, and quick comfort food for group visits.</p>
+    <div class="fd-tag-row"><span>Fast</span><span>Family</span><span>Chicken</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="mcdonald&#x27;s burgers iconic burgers, fries, breakfast bites, and easy all-day meals for busy mall days. south pavilion level 1 fast burgers breakfast">
+  <div class="fd-tenant-image">
+    <img src="assets/McDonalds(Directory).jpg" alt="McDonald's visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Burgers</span>
+    <h3>McDonald's</h3>
+    <p>Iconic burgers, fries, breakfast bites, and easy all-day meals for busy mall days.</p>
+    <div class="fd-tag-row"><span>Fast</span><span>Burgers</span><span>Breakfast</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="starbucks coffeehouse espresso classics, seasonal drinks, and cozy tables for study, work, or meetups. north gallery level 1 coffee meetup dessert">
+  <div class="fd-tenant-image">
+    <img src="assets/Starbucks(Directory).jpg" alt="Starbucks visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Coffeehouse</span>
+    <h3>Starbucks</h3>
+    <p>Espresso classics, seasonal drinks, and cozy tables for study, work, or meetups.</p>
+    <div class="fd-tag-row"><span>Coffee</span><span>Meetup</span><span>Dessert</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="pizza hut pizza &amp; pasta shareable pizzas, pasta favorites, and family dining with casual table service. south pavilion level 2 pizza pasta family">
+  <div class="fd-tenant-image">
+    <img src="assets/PizzaHut(Directory).jpg" alt="Pizza Hut visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Pizza &amp; Pasta</span>
+    <h3>Pizza Hut</h3>
+    <p>Shareable pizzas, pasta favorites, and family dining with casual table service.</p>
+    <div class="fd-tag-row"><span>Pizza</span><span>Pasta</span><span>Family</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="sushi tei japanese dining sushi platters, donburi, noodles, and refined japanese dining for groups. north gallery level 3 sushi japanese dine-in">
+  <div class="fd-tenant-image">
+    <img src="assets/Sushitei(Directory).jpg" alt="Sushi Tei visual">
+    <span class="fd-floor-tag">Level 3</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Japanese Dining</span>
+    <h3>Sushi Tei</h3>
+    <p>Sushi platters, donburi, noodles, and refined Japanese dining for groups.</p>
+    <div class="fd-tag-row"><span>Sushi</span><span>Japanese</span><span>Dine-in</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="genki sushi conveyor sushi fast sushi ordering, playful delivery lanes, and fresh japanese bites with energy. north gallery level 3 sushi quick fun">
+  <div class="fd-tenant-image">
+    <img src="assets/Sushiro(Directory).jpg" alt="Sushiro visual">
+    <span class="fd-floor-tag">Level 3</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Conveyor Sushi</span>
+    <h3>Sushiro</h3>
+    <p>Fast sushi ordering, playful delivery lanes, and fresh Japanese bites with energy.</p>
+    <div class="fd-tag-row"><span>Sushi</span><span>Quick</span><span>Fun</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="solaria local comfort popular rice plates, noodles, western meals, and reliable family-friendly portions. south pavilion level 2 local family comfort">
+  <div class="fd-tenant-image">
+    <img src="assets/Solaria(Directory).jpg" alt="Solaria visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Local Comfort</span>
+    <h3>Solaria</h3>
+    <p>Popular rice plates, noodles, western meals, and reliable family-friendly portions.</p>
+    <div class="fd-tag-row"><span>Local</span><span>Family</span><span>Comfort</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="marugame udon udon &amp; tempura fresh udon bowls, crispy tempura, and warm japanese comfort in a quick-service flow. south pavilion level 2 udon tempura quick">
+  <div class="fd-tenant-image">
+    <img src="assets/Marugame(Directory).jpg" alt="Marugame Udon visual">
+    <span class="fd-floor-tag">Level 2</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Udon &amp; Tempura</span>
+    <h3>Marugame Udon</h3>
+    <p>Fresh udon bowls, crispy tempura, and warm Japanese comfort in a quick-service flow.</p>
+    <div class="fd-tag-row"><span>Udon</span><span>Tempura</span><span>Quick</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="gyu-kaku japanese bbq interactive yakiniku, grilled meats, and social table-side dining for longer meals. north gallery level 4 bbq dinner group">
+  <div class="fd-tenant-image">
+    <img src="assets/Gyukaku(Directory).jpg" alt="Gyu-Kaku visual">
+    <span class="fd-floor-tag">Level 4</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Japanese BBQ</span>
+    <h3>Gyu-Kaku</h3>
+    <p>Interactive yakiniku, grilled meats, and social table-side dining for longer meals.</p>
+    <div class="fd-tag-row"><span>BBQ</span><span>Dinner</span><span>Group</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="burger king flame-grilled burgers whopper favorites, fries, and quick meals with a casual grab-and-go pace. south pavilion level 1 burgers fast combo">
+  <div class="fd-tenant-image">
+    <img src="assets/Burgerking(Directory).jpg" alt="Burger King visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Flame-Grilled Burgers</span>
+    <h3>Burger King</h3>
+    <p>Whopper favorites, fries, and quick meals with a casual grab-and-go pace.</p>
+    <div class="fd-tag-row"><span>Burgers</span><span>Fast</span><span>Combo</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="kopi kenangan local coffee local coffee signatures, milk-based favorites, and practical drinks for short breaks. north gallery level 1 coffee local takeaway">
+  <div class="fd-tenant-image">
+    <img src="assets/Kopikenangan(Directory).jpg" alt="Kopi Kenangan visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Local Coffee</span>
+    <h3>Kopi Kenangan</h3>
+    <p>Local coffee signatures, milk-based favorites, and practical drinks for short breaks.</p>
+    <div class="fd-tag-row"><span>Coffee</span><span>Local</span><span>Takeaway</span></div>
+    <div class="fd-tenant-meta">
+      <span>North Gallery</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article><article class="fd-tenant-card directory-card reveal-on-scroll hover-lift" data-category="restaurant" data-search="chatime tea bar milk tea, fruit tea, toppings, and customizable drinks for refreshing mall walks. south pavilion level 1 tea boba refresh">
+  <div class="fd-tenant-image">
+    <img src="assets/Chatime(Directory).jpg" alt="Chatime visual">
+    <span class="fd-floor-tag">Level 1</span>
+  </div>
+  <div class="fd-tenant-body">
+    <span class="category-label">Tea Bar</span>
+    <h3>Chatime</h3>
+    <p>Milk tea, fruit tea, toppings, and customizable drinks for refreshing mall walks.</p>
+    <div class="fd-tag-row"><span>Tea</span><span>Boba</span><span>Refresh</span></div>
+    <div class="fd-tenant-meta">
+      <span>South Pavilion</span>
+      <span>10:00 AM - 10:00 PM</span>
+    </div>
+  </div>
+</article></div>
+  </section>
+
+  <section class="fd-section fd-split-story reveal-on-scroll">
+    <div class="fd-story-panel">
+      <p class="eyebrow">Directory improvement</p>
+      <h2>A directory built for quick decisions.</h2>
+      <p>Each tenant card gives you everything you need to decide where to go: category, floor, opening hours, and a short description of what to expect.</p>
+    </div>
+    <div class="fd-mini-guide">
+      <article><span>Tip</span><strong>Use search</strong><p>Try typing coffee, sushi, sneakers, denim, beauty, or level 2.</p></article>
+      <article><span>Flow</span><strong>Plan by wing</strong><p>North Gallery works well for shopping, South Pavilion works well for dining.</p></article>
+      <article><span>Time</span><strong>All-day access</strong><p>Featured tenants follow the mall daily operating hours.</p></article>
+      <article><span>Mobile</span><strong>Card stacking</strong><p>On mobile, cards stack cleanly with large touch targets.</p></article>
+    </div>
+  </section>
+</main>
+  <footer class="site-footer compact-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">FontDale</a>
+      <p>Premium urban lifestyle mall at Arcadia Circle, built for shopping, dining, events, and memorable city routines.</p>
+      <div class="social-row" aria-label="Social links">
+        <a href="#" aria-label="Instagram">
+    <img src="assets/Instagram(Logo).jpg" alt="Instagram">
+  </a>
+
+  <a href="#" aria-label="TikTok">
+    <img src="assets/Tiktok(Logo).jpg" alt="TikTok">
+  </a>
+
+  <a href="#" aria-label="YouTube">
+    <img src="assets/Youtube(Logo).jpg" alt="YouTube">
+  </a>
+      </div>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p>Arcadia Circle<br>North Gallery &amp; South Pavilion</p>
+      <p>Daily: 10:00 AM - 10:00 PM</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="directory.html">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="newsletter.html">Newsletter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 FontDale. All rights reserved.</span>
+    <span>Premium lifestyle destination at Arcadia Circle.</span>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
